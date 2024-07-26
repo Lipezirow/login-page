@@ -1,0 +1,139 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.interface {
+    background: url(img/cool-css-backgrounds.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.card {
+    display: flex;
+    background-color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    height: 600px;
+    border-radius: 20px 20px 20px;
+    border: none;
+    box-shadow: 3px 3px 10px rgb(150, 148, 148);
+
+    .elements {
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    & h1 {
+        font-size: 35px;
+    }
+
+    #label {
+        padding: 15px;
+        font-size: 20px;
+    }
+
+    #input {
+        padding: 15px;
+        width: 250px;
+        border-radius: 20px 20px 20px;
+        box-shadow: 1px 1px 7px black;
+        border: none;
+    }
+
+    #btn-login {
+        padding: 10px;
+        margin-top: 20px;
+        border-radius: 10px 10px 10px;
+        font-size: 15px;
+        box-shadow: 1px 1px 7px black;
+        background: linear-gradient(to left, rgb(119, 239, 255), rgb(255, 100, 242));
+        border: none;
+        color: #fff;
+        opacity:0.8;
+        
+    }
+
+    #cadastro {
+        padding: 15px;
+        margin-top: 50px;
+        border-radius: 20px 20px 20px;
+        font-size: 15px;
+        border: none;
+        color: #fff;
+        background: linear-gradient(to left, rgb(119, 239, 255), rgb(255, 100, 242));
+        box-shadow: 2px 2px 10px black;
+        opacity:0.8;
+    }
+
+    #btn-login:hover {
+        color: #000000;
+        opacity:1;
+        background: rgb(255, 255, 255);
+        
+    }
+
+    #cadastro:hover {
+        color: #000000;
+        opacity:1;
+        background: rgb(255, 255, 255);
+    }
+}
+
+  .login-box form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #000000;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+  }
+  
+  .login-box a:hover {
+    background:rgb(255, 100, 242);
+    color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(255, 100, 242),
+                0 0 25px rgb(255, 100, 242),
+                0 0 50px rgb(255, 100, 242),
+                0 0 100px rgb(255, 100, 242);
+  }
+  
+  .login-box a span {
+    position: absolute;
+    display: block;
+  }
+  
+  @keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+  
+    50%,100% {
+      left: 100%;
+    }
+  }
+  
+  .login-box a span:nth-child(1) {
+    bottom: 2px;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, rgb(119, 239, 255));
+    animation: btn-anim1 2s linear infinite;
+  }
